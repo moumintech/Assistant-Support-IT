@@ -1,10 +1,3 @@
-/* ==========================================================================
-   Zam — Assistante Support Informatique
-   styles.css (mode jour + accents verts)
-   - Profil premium (séparateurs, lignes, mini-icônes CSS)
-   - Nav mobile plus pro (animation d’ouverture)
-   - Boutons verts + variantes
-   ========================================================================== */
 
 /* -----------------------------
    0) Variables + reset
@@ -61,16 +54,14 @@ h2{ font-size: clamp(20px, 2.2vw, 28px); }
 h3{ font-size: 16px; }
 ul{ margin: 0; padding: 0; list-style: none; }
 
-/* Focus accessible */
+
 :focus-visible{
   outline: none;
   box-shadow: var(--focus);
   border-radius: 12px;
 }
 
-/* -----------------------------
-   1) Utilitaires
------------------------------- */
+
 .container{
   max-width: var(--max);
   margin: 0 auto;
@@ -91,7 +82,7 @@ ul{ margin: 0; padding: 0; list-style: none; }
   border: 0;
 }
 
-/* Skip link */
+
 .skipLink{
   position: absolute;
   left: 14px;
@@ -107,7 +98,7 @@ ul{ margin: 0; padding: 0; list-style: none; }
 }
 .skipLink:focus{ transform: translateY(0); }
 
-/* Petit séparateur “premium” */
+
 .hr-soft{
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(226,232,240,1), transparent);
@@ -115,9 +106,7 @@ ul{ margin: 0; padding: 0; list-style: none; }
   margin: 12px 0;
 }
 
-/* -----------------------------
-   2) Header / Navigation
------------------------------- */
+
 .header{
   position: sticky;
   top: 0;
@@ -156,7 +145,7 @@ ul{ margin: 0; padding: 0; list-style: none; }
   position: relative;
   overflow: hidden;
 }
-/* mini reflet */
+
 .logo::after{
   content:"";
   position:absolute;
@@ -171,7 +160,7 @@ ul{ margin: 0; padding: 0; list-style: none; }
   margin-top: 2px;
 }
 
-/* Nav desktop */
+
 .nav ul{
   display: flex;
   align-items: center;
@@ -192,7 +181,7 @@ ul{ margin: 0; padding: 0; list-style: none; }
   position: relative;
 }
 
-/* underline “premium” */
+
 .nav a::after{
   content:"";
   position:absolute;
@@ -222,10 +211,10 @@ ul{ margin: 0; padding: 0; list-style: none; }
   gap: 10px;
 }
 .header__cta .btn{
-  padding: 10px 14px;   /* réduit la hauteur/largeur */
-  border-radius: 14px;  /* pill plus propre */
+  padding: 10px 14px;  
+  border-radius: 14px;  
   font-size: 14px;
-  box-shadow: none;      /* nav plus clean */
+  box-shadow: none;     
 }
 header__cta .btn:not(.btn--ghost){
   background: linear-gradient(135deg, var(--green), #22c55e);
@@ -237,7 +226,7 @@ header__cta .btn:not(.btn--ghost){
   box-shadow: 0 12px 22px rgba(22,163,74,.22);
 }
 
-/* Bouton ghost (Ouvrir le chat) : plus fin, léger fond */
+
 .header__cta .btn.btn--ghost{
   background: rgba(255,255,255,.75);
   border-color: rgba(22,163,74,.22);
@@ -247,7 +236,7 @@ header__cta .btn:not(.btn--ghost){
   border-color: rgba(22,163,74,.32);
 }
 
-/* Burger */
+
 .burger{
   display: none;
   width: 44px;
@@ -273,9 +262,7 @@ header__cta .btn:not(.btn--ghost){
   transition: transform var(--speed-3) var(--ease), opacity var(--speed-3) var(--ease);
 }
 
-/* Mobile nav container (l'ouverture est gérée via JS en toggle hidden + aria-expanded)
-   - quand hidden n'est plus présent, on anime l’apparition
-*/
+
 .mobileNav{
   border-top: 1px solid rgba(226,232,240,.9);
   background: rgba(255,255,255,.78);
@@ -287,7 +274,7 @@ header__cta .btn:not(.btn--ghost){
   box-shadow: 0 18px 40px rgba(2,6,23,.10);
 }
 
-/* liens mobile */
+
 .mobileNav a{
   display: block;
   padding: 12px 12px;
@@ -307,7 +294,6 @@ header__cta .btn:not(.btn--ghost){
   margin-top: 10px;
 }
 
-/* Animation ouverture mobile */
 @keyframes mobileIn{
   from{
     opacity: 0;
@@ -345,7 +331,7 @@ header__cta .btn:not(.btn--ghost){
   overflow: hidden;
 }
 
-/* petit “shine” */
+
 .btn::after{
   content:"";
   position:absolute;
@@ -410,7 +396,7 @@ header__cta .btn:not(.btn--ghost){
   overflow: hidden;
 }
 
-/* fond discret “premium” */
+
 .hero__content::before{
   content:"";
   position:absolute;
@@ -437,7 +423,7 @@ header__cta .btn:not(.btn--ghost){
   margin-bottom: 10px;
 }
 
-/* mini pastille à gauche du badge */
+
 .badge::before{
   content:"";
   width: 10px;
@@ -480,15 +466,15 @@ header__cta .btn:not(.btn--ghost){
 }
 
 /* -----------------------------
-   5) Carte profil PREMIUM
-   - “icônes” CSS avant chaque ligne
+   5) Carte
+    
 ------------------------------ */
 .hero__card{
   display: grid;
   align-content: start;
 }
 
-/* Carte globale */
+
 .card{
   background: rgba(255,255,255,.88);
   border: 1px solid rgba(226,232,240,.9);
@@ -499,7 +485,7 @@ header__cta .btn:not(.btn--ghost){
   overflow: hidden;
 }
 
-/* highlight vertical */
+
 .card::before{
   content:"";
   position:absolute;
@@ -532,7 +518,7 @@ header__cta .btn:not(.btn--ghost){
   position: relative;
 }
 
-/* petit check dans l’avatar (CSS only) */
+
 .avatar::after{
   content:"";
   position:absolute;
@@ -556,13 +542,13 @@ header__cta .btn:not(.btn--ghost){
   font-size: 14px;
 }
 
-/* Body en “lignes premium” */
+
 .card__body{
   display: grid;
   gap: 10px;
 }
 
-/* Chaque p : séparation + icône */
+
 .card__body p{
   margin: 0;
   color: var(--muted);
@@ -573,7 +559,7 @@ header__cta .btn:not(.btn--ghost){
   position: relative;
 }
 
-/* icône générique */
+
 .card__body p::before{
   content:"";
   position:absolute;
@@ -588,7 +574,7 @@ header__cta .btn:not(.btn--ghost){
   box-shadow: 0 8px 16px rgba(2,6,23,.06);
 }
 
-/* petit symbole dans l’icône (CSS) */
+
 .card__body p::after{
   content:"";
   position:absolute;
@@ -602,9 +588,9 @@ header__cta .btn:not(.btn--ghost){
   border-radius: 1px;
 }
 
-/* icon “varie” selon ordre (pure CSS, sans changer ton HTML) */
+
 .card__body p:nth-child(1)::after{
-  /* “clé / outil” style */
+
   width: 10px; height: 6px;
   transform: translateY(-50%) rotate(0deg);
   border: 0;
@@ -616,7 +602,7 @@ header__cta .btn:not(.btn--ghost){
 }
 
 .card__body p:nth-child(2)::after{
-  /* “horloge” style */
+
   width: 8px; height: 8px;
   transform: translateY(-50%);
   border: 2px solid rgba(21,128,61,.9);
@@ -627,7 +613,7 @@ header__cta .btn:not(.btn--ghost){
   background: rgba(22,163,74,.10);
 }
 
-/* 3e ligne : “localisation” style */
+
 .card__body p:nth-child(3)::after{
   width: 8px; height: 8px;
   transform: translateY(-60%) rotate(45deg);
@@ -685,7 +671,6 @@ header__cta .btn:not(.btn--ghost){
   overflow: hidden;
 }
 
-/* accent coin */
 .tile::before{
   content:"";
   position:absolute;
@@ -733,7 +718,7 @@ header__cta .btn:not(.btn--ghost){
   padding-left: 36px;
 }
 
-/* mini check à gauche (CSS only) */
+
 .list li::before{
   content:"";
   position:absolute;
@@ -776,7 +761,7 @@ header__cta .btn:not(.btn--ghost){
   position: relative;
 }
 
-/* icône “enveloppe / map / clock” selon ligne */
+
 .contact__list li::before{
   content:"";
   position:absolute;
@@ -842,7 +827,7 @@ header__cta .btn:not(.btn--ghost){
   gap: 10px;
 }
 
-/* Formulaire */
+
 .form{
   background: rgba(255,255,255,.88);
   border: 1px solid rgba(226,232,240,.9);
