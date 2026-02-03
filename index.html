@@ -4,34 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zam — Assistante Support Informatique</title>
-   <link rel="stylesheet" href="./assets/styles.css" />
+  <meta name="description" content="Assistante support informatique : dépannage Windows, réseau, comptes, matériel, documentation et sensibilisation sécurité. Intervention remote ou sur site." />
+  <link rel="stylesheet" href="./assets/styles.css" />
 </head>
 
 <body>
-  <nav class="menu" aria-label="Navigation principale">
-    <ul>
-      <a href="#accueil">Accueil</a>
+  <a class="skipLink" href="#contenu">Aller au contenu</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <div class="brand">
+        <a href="#contenu" aria-label="Retour à l'accueil">
+          <img
+            src="./assets/images/avatar-zam.png"
+            alt="Logo ou avatar de Zam, assistante support informatique"
+            width="80"
+            height="80"
+          />
+        </a>
+      </div>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#methode">Méthode</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__cta">
+        <button class="btn btn--ghost" id="btnChat" type="button" aria-controls="contact" aria-label="Ouvrir le chat d'assistance">
+          Ouvrir le chat
+        </button>
+        <a class="btn" href="#contact">Me contacter</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" type="button" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" hidden>
       <a href="#services">Services</a>
       <a href="#methode">Méthode</a>
       <a href="#realisations">Réalisations</a>
       <a href="#contact">Contact</a>
-    </ul>
-  </nav>
-
-  <header  class="header">
-   <div class="container header__inner">
-      <div class="brand">
-         <img
-        src="./assets/images/avatar-zam.png"
-        alt="Logo ou avatar de Zam, assistante support informatique"
-        width="80"
-        height="80"
-      >
-      </div>
+      <button class="btn btn--ghost" id="btnChatMobile" type="button" aria-label="Ouvrir le chat d'assistance">
+        Ouvrir le chat
+      </button>
+    </div>
   </header>
- <main id="contenu">
-   <section class="hero">
-    <div class="container hero__grid">
+
+  <main id="contenu" tabindex="-1">
+    <section class="hero" aria-label="Présentation">
+      <div class="container hero__grid">
         <div class="hero__content">
           <p class="badge">Disponible • Support utilisateurs • Dépannage</p>
           <h1>Assistante support informatique <span class="grad">réactive</span>, orientée résolution.</h1>
@@ -42,7 +67,9 @@
 
           <div class="hero__actions">
             <a class="btn" href="#contact">Demander une aide</a>
-            <button class="btn btn--ghost" id="btnChat2" type="button">Discuter maintenant</button>
+            <button class="btn btn--ghost" id="btnChat2" type="button" aria-label="Démarrer une discussion">
+              Discuter maintenant
+            </button>
           </div>
 
           <ul class="hero__stats" aria-label="Points clés">
@@ -50,56 +77,196 @@
             <li><strong>Procédures</strong> et documentation</li>
             <li><strong>Communication</strong> simple</li>
           </ul>
+
+          <div class="hero__trust">
+            <p class="muted">
+              Objectif : une solution fiable, expliquée simplement, avec un suivi (et une escalade si nécessaire).
+            </p>
+          </div>
         </div>
-          <div class="hero__card" aria-label="Carte profil">
+
+        <div class="hero__card" aria-label="Carte profil">
           <div class="card">
             <div class="card__top">
               <div class="avatar" aria-hidden="true">Zam</div>
               <div>
                 <p class="card__name">Zam</p>
-                <p class="card__sub">Support IT • Ville Lile • Remote ou sur Site</p>
+                <p class="card__sub">Support IT • Lille • Remote ou sur site</p>
               </div>
             </div>
+
             <div class="card__body">
               <p><strong>Interventions :</strong> assistance utilisateurs, postes Windows, réseau, comptes.</p>
-              <p><strong>Temps de réponse :</strong> rapide </p>
+              <p><strong>Temps de réponse :</strong> dès que possible (selon priorité/urgence).</p>
+              <p><strong>Langues :</strong> français • anglais (basique/technique).</p>
             </div>
+
             <div class="card__bottom">
               <a class="btn btn--small" href="#contact">Contact</a>
-              <button class="btn btn--small btn--ghost" id="btnChat3" type="button">Chat</button>
+              <button class="btn btn--small btn--ghost" id="btnChat3" type="button" aria-label="Ouvrir le chat">
+                Chat
+              </button>
             </div>
           </div>
         </div>
       </div>
-   </section>
- <section class="section" id="services"></section>
-      
-
-  <section class="section" id="realisations"></section>
-   
     </section>
 
-     <section class="section section--alt" id="contact">
-      <form class="form" id="contactForm">
-          <label>
-            Nom
-            <input name="name" autocomplete="name" required />
-          </label>
-          <label>
-            Email
-            <input name="email" type="email" autocomplete="email" required />
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-          <button class="btn" type="submit">Envoyer</button>
-          <p class="form__hint muted">Le formulaire .</p>
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">Services</h2>
+        <p class="muted">Des interventions courantes, cadrées, avec un suivi clair.</p>
+
+        <div class="grid">
+          <article class="tile">
+            <h3>Diagnostic et résolution</h3>
+            <p>Analyse de la cause, priorisation, plan d’action, vérification finale.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Support Windows</h3>
+            <p>Comptes, sessions, mises à jour, drivers, imprimantes, périphériques.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Réseau et connectivité</h3>
+            <p>Wi-Fi/Ethernet, DNS, IP, tests (ping/tracert), partage, VPN basique.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Sécurité utilisateur</h3>
+            <p>Bonnes pratiques, mots de passe, MFA, sensibilisation phishing.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Documentation</h3>
+            <p>Procédures simples, checklists, pas-à-pas pour utilisateurs.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Outils et ticketing</h3>
+            <p>Organisation, suivi, comptes-rendus, escalade si nécessaire.</p>
+          </article>
+        </div>
+
+        <div class="services__scope">
+          <h3 class="visuallyHidden">Périmètre</h3>
+          <ul class="list">
+            <li><strong>Idéal pour :</strong> incidents utilisateurs, petites configurations, diagnostic, accompagnement.</li>
+            <li><strong>Si besoin :</strong> escalade vers un administrateur système/réseau ou prestataire.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="methode" aria-labelledby="methode-title">
+      <div class="container">
+        <h2 id="methode-title">Méthode</h2>
+        <p class="muted">Une façon de travailler simple, rassurante et traçable.</p>
+
+        <div class="grid">
+          <article class="tile">
+            <h3>1) Comprendre</h3>
+            <p>Je clarifie le contexte : message d’erreur, actions déjà tentées, impact métier.</p>
+          </article>
+
+          <article class="tile">
+            <h3>2) Diagnostiquer</h3>
+            <p>Tests rapides, hypothèses, vérifications (réseau, comptes, poste, logiciel).</p>
+          </article>
+
+          <article class="tile">
+            <h3>3) Résoudre</h3>
+            <p>Correction ou contournement propre, en expliquant ce qui est fait et pourquoi.</p>
+          </article>
+
+          <article class="tile">
+            <h3>4) Sécuriser</h3>
+            <p>Petites améliorations : mises à jour, bonnes pratiques, prévention (phishing/MFA).</p>
+          </article>
+
+          <article class="tile">
+            <h3>5) Documenter</h3>
+            <p>Compte-rendu ou mini procédure pour éviter que l’incident se reproduise.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Priorisation</h3>
+            <p>Urgent / important / faible impact : je te dis clairement ce qui passe en premier.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="realisations" aria-labelledby="realisations-title">
+      <div class="container">
+        <h2 id="realisations-title">Réalisations</h2>
+        <p class="muted">Exemples courts (à adapter avec ton vrai vécu).</p>
+
+        <div class="grid">
+          <article class="tile">
+            <h3>Audit rapide postes</h3>
+            <p>Inventaire, vérifs comptes, points de sécurité, recommandations.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Dépannage connectivité</h3>
+            <p>Tests réseau, correction DNS/IP, stabilisation Wi-Fi, compte-rendu.</p>
+          </article>
+
+          <article class="tile">
+            <h3>Procédure “préparation poste”</h3>
+            <p>Checklist réutilisable : installation, MAJ, outils, accès, tests.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div>
+          <h2 id="contact-title">Contact</h2>
+          <p class="muted">Tu peux m’écrire ou utiliser le chat (réponse dès que possible).</p>
+
+          <ul class="contact__list">
+            <li><strong>Email :</strong> <a href="mailto:zam@mail.com">zam@mail.com</a></li>
+            <li><strong>Zone :</strong> Hauts-de-France / Remote</li>
+            <li><strong>Créneaux :</strong> soirs et le week-end (à ajuster)</li>
+          </ul>
+
+          <div class="contact__actions">
+            <button class="btn" id="btnChat4" type="button" aria-label="Ouvrir le chat">
+              Ouvrir le chat
+            </button>
+          </div>
+
+         
+          </div>
+        </div>
+
+        <form class="form" id="contactForm" aria-describedby="formHint">
+          <fieldset class="form__group">
+            <legend class="visuallyHidden">Formulaire de contact</legend>
+
+            <label for="name">Nom</label>
+            <input id="name" name="name" autocomplete="name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Décris le problème, le contexte, et l'urgence."></textarea>
+
+            <button class="btn" type="submit">Envoyer</button>
+            
+          </fieldset>
         </form>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2026 —  Assistante Support Informatique</p>
+    <p>© 2026 — Assistante Support Informatique</p>
   </footer>
 </body>
 </html>
