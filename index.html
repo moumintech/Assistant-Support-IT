@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zam — Assistante Support Informatique</title>
   <meta name="description" content="Assistante support informatique : dépannage Windows, réseau, comptes, matériel, documentation et sensibilisation sécurité. Intervention remote ou sur site." />
+
   <!-- Google Fonts : Inter -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./assets/styles.css" />
 </head>
@@ -18,24 +19,27 @@
 
   <header class="header">
     <div class="container header__inner">
+
+      <!-- Brand -->
       <div class="brand">
-       <div class="logo">IT</div>
-          <div>
-            Zam — Support Informatique<br />
-            <small style="color:var(--muted); font-weight:700;">Dépannage • Installation • Assistance à distance</small>
-          </div>
+        <div class="logo">IT</div>
+        <div>
+          Zam — Support Informatique<br />
+          <small style="color:var(--muted); font-weight:700;">Dépannage • Installation • Assistance à distance</small>
         </div>
-        </a>
       </div>
 
+      <!-- Nav desktop -->
       <nav class="nav" aria-label="Navigation principale">
         <ul>
-        <a href="#services">Services</a>
-        <a href="#methode">Comment je travaille</a>
-        <a href="#realisations">Réalisations</a>
-        <a href="#contact">Contact</a>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#methode">Comment je travaille</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
-    </ul>
+
+      <!-- CTA -->
       <div class="header__cta">
         <button class="btn btn--ghost" id="btnChat" type="button" aria-controls="contact" aria-label="Ouvrir le chat d'assistance">
           Ouvrir le chat
@@ -43,11 +47,13 @@
         <a class="btn" href="#contact">Me contacter</a>
       </div>
 
+      <!-- Burger -->
       <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" type="button" aria-controls="mobileNav">
         <span></span><span></span><span></span>
       </button>
     </div>
 
+    <!-- Nav mobile -->
     <div class="mobileNav" id="mobileNav" hidden>
       <a href="#services">Services</a>
       <a href="#methode">Méthode</a>
@@ -60,14 +66,22 @@
   </header>
 
   <main id="contenu" tabindex="-1">
+
+    <!-- HERO -->
     <section class="hero" aria-label="Présentation">
       <div class="container hero__grid">
+
+        <!-- Content -->
         <div class="hero__content">
           <p class="badge">Disponible • Support utilisateurs • Dépannage</p>
-          <h1>Assistante support informatique <span class="grad">réactive</span>, orientée résolution.</h1>
+
+          <h1 class="headline">
+            Assistante support informatique <span class="grad">réactive</span>, orientée résolution.
+          </h1>
+
           <p class="lead">
-            J’aide les utilisateurs à résoudre rapidement leurs incidents : Windows, comptes, logiciels, réseau,
-            matériel et bonnes pratiques de sécurité.
+            J’aide les utilisateurs à résoudre leurs incidents : Windows, comptes, logiciels, réseau,
+            périphériques et bonnes pratiques de sécurité.
           </p>
 
           <div class="hero__actions">
@@ -77,33 +91,28 @@
             </button>
           </div>
 
-          <ul class="hero__stats" aria-label="Points clés">
-            <li><strong>Diagnostic</strong> clair</li>
-            <li><strong>Procédures</strong> et documentation</li>
-            <li><strong>Communication</strong> simple</li>
-          </ul>
-
           <div class="hero__trust">
             <p class="muted">
-              Objectif : une solution fiable, expliquée simplement, avec un suivi (et une escalade si nécessaire).
+              Objectif : une solution fiable, expliquée simplement, avec un suivi clair (et escalade si nécessaire).
             </p>
           </div>
         </div>
 
+        <!-- Profile card -->
         <div class="hero__card" aria-label="Carte profil">
           <div class="card">
             <div class="card__top">
               <div class="avatar" aria-hidden="true">Zam</div>
               <div>
                 <p class="card__name">Zam</p>
-                <p class="card__sub">Support IT • Lille • Remote ou sur site</p>
+                <p class="card__sub">Support IT • Hauts-de-France • Remote ou sur site</p>
               </div>
             </div>
 
             <div class="card__body">
-              <p><strong>Interventions :</strong> assistance utilisateurs, postes Windows, réseau, comptes.</p>
-              <p><strong>Temps de réponse :</strong> dès que possible (selon priorité/urgence).</p>
-              <p><strong>Langues :</strong> français • anglais (basique/technique).</p>
+              <p><strong>Interventions :</strong> support utilisateurs, postes Windows, réseau, comptes, imprimantes.</p>
+              <p><strong>Temps de réponse :</strong> généralement <strong>moins de 24h</strong> (selon urgence/priorité).</p>
+              <p><strong>Format :</strong> assistance à distance ou sur site (selon besoin).</p>
             </div>
 
             <div class="card__bottom">
@@ -114,9 +123,11 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
+    <!-- SERVICES -->
     <section class="section" id="services" aria-labelledby="services-title">
       <div class="container">
         <h2 id="services-title">Services</h2>
@@ -124,8 +135,8 @@
 
         <div class="grid">
           <article class="tile">
-            <h3>Diagnostic et résolution</h3>
-            <p>Analyse de la cause, priorisation, plan d’action, vérification finale.</p>
+            <h3>Diagnostic & résolution</h3>
+            <p>Analyse de la cause, plan d’action, correction, vérification finale.</p>
           </article>
 
           <article class="tile">
@@ -134,7 +145,7 @@
           </article>
 
           <article class="tile">
-            <h3>Réseau et connectivité</h3>
+            <h3>Réseau & connectivité</h3>
             <p>Wi-Fi/Ethernet, DNS, IP, tests (ping/tracert), partage, VPN basique.</p>
           </article>
 
@@ -149,8 +160,8 @@
           </article>
 
           <article class="tile">
-            <h3>Outils et ticketing</h3>
-            <p>Organisation, suivi, comptes-rendus, escalade si nécessaire.</p>
+            <h3>Suivi & ticketing</h3>
+            <p>Organisation, comptes-rendus, priorisation, escalade si nécessaire.</p>
           </article>
         </div>
 
@@ -158,12 +169,13 @@
           <h3 class="visuallyHidden">Périmètre</h3>
           <ul class="list">
             <li><strong>Idéal pour :</strong> incidents utilisateurs, petites configurations, diagnostic, accompagnement.</li>
-            <li><strong>Si besoin :</strong> escalade vers un administrateur système/réseau ou prestataire.</li>
+            <li><strong>Si besoin :</strong> escalade vers un admin système/réseau ou prestataire.</li>
           </ul>
         </div>
       </div>
     </section>
 
+    <!-- METHODE -->
     <section class="section section--alt" id="methode" aria-labelledby="methode-title">
       <div class="container">
         <h2 id="methode-title">Méthode</h2>
@@ -172,7 +184,7 @@
         <div class="grid">
           <article class="tile">
             <h3>1) Comprendre</h3>
-            <p>Je clarifie le contexte : message d’erreur, actions déjà tentées, impact métier.</p>
+            <p>Je clarifie le contexte : message d’erreur, actions tentées, impact.</p>
           </article>
 
           <article class="tile">
@@ -182,27 +194,28 @@
 
           <article class="tile">
             <h3>3) Résoudre</h3>
-            <p>Correction ou contournement propre, en expliquant ce qui est fait et pourquoi.</p>
+            <p>Correction propre, en expliquant ce qui est fait et pourquoi.</p>
           </article>
 
           <article class="tile">
-            <h3>4) Sécuriser</h3>
-            <p>Petites améliorations : mises à jour, bonnes pratiques, prévention (phishing/MFA).</p>
+            <h3>4) Prévenir</h3>
+            <p>Mises à jour, bonnes pratiques, prévention phishing/MFA si nécessaire.</p>
           </article>
 
           <article class="tile">
             <h3>5) Documenter</h3>
-            <p>Compte-rendu ou mini procédure pour éviter que l’incident se reproduise.</p>
+            <p>Compte-rendu ou mini procédure pour éviter la répétition.</p>
           </article>
 
           <article class="tile">
             <h3>Priorisation</h3>
-            <p>Urgent / important / faible impact : je te dis clairement ce qui passe en premier.</p>
+            <p>Urgent / important / faible impact : je te dis clairement l’ordre.</p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- REALISATIONS -->
     <section class="section" id="realisations" aria-labelledby="realisations-title">
       <div class="container">
         <h2 id="realisations-title">Réalisations</h2>
@@ -211,7 +224,7 @@
         <div class="grid">
           <article class="tile">
             <h3>Audit rapide postes</h3>
-            <p>Inventaire, vérifs comptes, points de sécurité, recommandations.</p>
+            <p>Inventaire, vérifications, recommandations sécurité & organisation.</p>
           </article>
 
           <article class="tile">
@@ -221,14 +234,17 @@
 
           <article class="tile">
             <h3>Procédure “préparation poste”</h3>
-            <p>Checklist réutilisable : installation, MAJ, outils, accès, tests.</p>
+            <p>Checklist : installation, MAJ, outils, accès, tests finaux.</p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="section section--alt" id="contact" aria-labelledby="contact-title">
       <div class="container contact">
+
+        <!-- Left info column -->
         <div>
           <h2 id="contact-title">Contact</h2>
           <p class="muted">Tu peux m’écrire ou utiliser le chat (réponse dès que possible).</p>
@@ -236,7 +252,7 @@
           <ul class="contact__list">
             <li><strong>Email :</strong> <a href="mailto:zam@mail.com">zam@mail.com</a></li>
             <li><strong>Zone :</strong> Hauts-de-France / Remote</li>
-            <li><strong>Créneaux :</strong> soirs et le week-end (à ajuster)</li>
+            <li><strong>Créneaux :</strong> soirs et week-end (à ajuster)</li>
           </ul>
 
           <div class="contact__actions">
@@ -244,11 +260,9 @@
               Ouvrir le chat
             </button>
           </div>
-
-         
-          </div>
         </div>
 
+        <!-- Right form column -->
         <form class="form" id="contactForm" aria-describedby="formHint">
           <fieldset class="form__group">
             <legend class="visuallyHidden">Formulaire de contact</legend>
@@ -263,39 +277,39 @@
             <textarea id="message" name="message" rows="5" required placeholder="Décris le problème, le contexte, et l'urgence."></textarea>
 
             <button class="btn" type="submit">Envoyer</button>
-            
           </fieldset>
         </form>
+
       </div>
     </section>
   </main>
 
   <footer>
-  <div class="container footer__inner">
-    <p class="footer__brand">
-      © 2026 — <strong>Zam</strong>, Assistante Support Informatique
-    </p>
+    <div class="container footer__inner">
+      <p class="footer__brand">
+        © 2026 — <strong>Zam</strong>, Assistante Support Informatique
+      </p>
 
-    <p class="footer__meta">
-      Support utilisateurs · Dépannage · Documentation · Sécurité
-    </p>
+      <p class="footer__meta">
+        Support utilisateurs · Dépannage · Documentation · Sécurité
+      </p>
 
-    <nav class="footer__nav" aria-label="Navigation pied de page">
-      <a href="#services">Services</a>
-      <span aria-hidden="true">•</span>
-      <a href="#methode">Méthode</a>
-      <span aria-hidden="true">•</span>
-      <a href="#realisations">Réalisations</a>
-      <span aria-hidden="true">•</span>
-      <a href="#contact">Contact</a>
-    </nav>
+      <nav class="footer__nav" aria-label="Navigation pied de page">
+        <a href="#services">Services</a>
+        <span aria-hidden="true">•</span>
+        <a href="#methode">Méthode</a>
+        <span aria-hidden="true">•</span>
+        <a href="#realisations">Réalisations</a>
+        <span aria-hidden="true">•</span>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <p class="footer__legal muted">
-      Site vitrine pédagogique — Aucun support automatisé sans accord préalable.
-    </p>
-  </div>
-</footer>
+      <p class="footer__legal muted">
+        Site vitrine pédagogique — Aucun support automatisé sans accord préalable.
+      </p>
+    </div>
+  </footer>
 
-</body>
   <script src="./assets/app.js"></script>
+</body>
 </html>
