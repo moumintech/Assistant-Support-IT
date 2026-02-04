@@ -459,11 +459,7 @@ header__cta .btn:not(.btn--ghost){
   margin: 14px 0 10px;
 }
 
-.hero__trust{
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid rgba(226,232,240,.85);
-}
+
 
 /* -----------------------------
    5) Carte
@@ -531,10 +527,7 @@ header__cta .btn:not(.btn--ghost){
   box-shadow: 0 0 0 4px rgba(22,163,74,.14);
 }
 
-.card__name{
-  margin: 0;
-  font-weight: 900;
-}
+
 .card__sub{
   margin: 2px 0 0;
   font-weight: 700;
@@ -694,29 +687,7 @@ header__cta .btn:not(.btn--ghost){
   font-size: 14px;
 }
 
-.services__scope{
-  margin-top: 16px;
-  padding: 14px;
-  border-radius: var(--radius);
-  background: rgba(255,255,255,.86);
-  border: 1px solid rgba(226,232,240,.9);
-  box-shadow: var(--shadow-soft);
-}
 
-.list{
-  display: grid;
-  gap: 8px;
-}
-.list li{
-  padding: 10px 12px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: #fff;
-  color: var(--muted);
-  font-weight: 650;
-  position: relative;
-  padding-left: 36px;
-}
 
 
 .list li::before{
