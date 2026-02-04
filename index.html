@@ -59,238 +59,349 @@
       </button>
     </div>
   </header>
+<main id="contenu" tabindex="-1">
 
-  <main id="contenu" tabindex="-1">
+  <section class="hero" aria-label="Présentation">
+    <div class="container hero__grid">
 
-    <!-- HERO -->
-    <section class="hero" aria-label="Présentation">
-      <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="badge">Disponible • 100% à distance • Réponse rapide</p>
 
-        <!-- Content -->
-        <div class="hero__content">
-          <p class="badge">Disponible • Support utilisateurs • Dépannage</p>
+        <h1 class="headline">
+          Support informatique à distance
+        </h1>
 
-          <h1 class="headline">
-            Assistante support informatique 
-          </h1>
+        <p class="lead">
+          Dépannage clair pour particuliers & petites entreprises : Windows, Wi-Fi, comptes, logiciels, imprimantes.
+        </p>
 
-          <p class="lead">
-            J’aide les utilisateurs à résoudre leurs incidents : Windows, comptes, logiciels, réseau,
-            périphériques .
-          </p>
+        <p class="muted">
+          <strong>Actuellement gratuit</strong> (missions ponctuelles, selon disponibilité). <strong>Pas de déplacement</strong>.
+        </p>
 
-          <div class="hero__actions">
-            <a class="btn" href="#contact">Demander une aide</a>
-            <button class="btn btn--ghost" id="btnChat2" type="button" aria-label="Démarrer une discussion">
-              Discuter maintenant
+        <div class="hero__actions">
+          <a class="btn" href="#contact">Demander une aide</a>
+          <button class="btn btn--ghost" id="btnChat2" type="button" aria-label="Démarrer une discussion">
+            Discuter maintenant
+          </button>
+        </div>
+      </div>
+
+      <div class="hero__card" aria-label="Carte profil">
+        <div class="card">
+          <div class="card__top">
+            <div class="avatar" aria-hidden="true">Zam</div>
+            <div>
+              <p class="card__sub">Support IT • Hauts-de-France • 100% à distance</p>
+            </div>
+          </div>
+
+          <div class="card__body">
+            <p><strong>Je peux aider :</strong> Windows, Wi-Fi, comptes, logiciels, imprimantes.</p>
+            <p><strong>Délai :</strong> souvent <strong>&lt; 24h</strong> (selon disponibilité).</p>
+            <p><strong>Format :</strong> à distance uniquement — <strong>pas sur site</strong>.</p>
+            <p><strong>Tarif :</strong> <strong>gratuit</strong> pour l’instant (missions ponctuelles).</p>
+          </div>
+
+          <div class="card__bottom">
+            <a class="btn btn--small" href="#contact">Contact</a>
+            <button class="btn btn--small btn--ghost" id="btnChat3" type="button" aria-label="Ouvrir le chat">
+              Chat
             </button>
           </div>
         </div>
-
-        <!-- Profile card -->
-        <div class="hero__card" aria-label="Carte profil">
-          <div class="card">
-            <div class="card__top">
-              <div class="avatar" aria-hidden="true">Zam</div>
-              <div>
-                <p class="card__sub">Support IT • Hauts-de-France • Remote ou sur site</p>
-              </div>
-            </div>
-
-            <div class="card__body">
-              <p><strong>Interventions :</strong> support utilisateurs, postes Windows, réseau, comptes, imprimantes.</p>
-              <p><strong>Temps de réponse :</strong> généralement <strong>moins de 24h</strong> .</p>
-              <p><strong>Format :</strong> assistance à distance ou sur site.</p>
-            </div>
-
-            <div class="card__bottom">
-              <a class="btn btn--small" href="#contact">Contact</a>
-              <button class="btn btn--small btn--ghost" id="btnChat3" type="button" aria-label="Ouvrir le chat">
-                Chat
-              </button>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </section>
 
-    <!-- SERVICES -->
-    <section class="section" id="services" aria-labelledby="services-title">
-      <div class="container">
-        <h2 id="services-title">Services</h2>
-        <p class="muted">Des interventions courantes, cadrées, avec un suivi clair.</p>
-
-        <div class="grid">
-          <article class="tile">
-            <h3>Diagnostic et résolution de probléme </h3>
-            <p>Analyse de la cause, plan d’action, correction, vérification finale.</p>
-          </article>
-
-          <article class="tile">
-            <h3>Systeme exploitation Windows </h3>
-            <p>Comptes, sessions, mises à jour, drivers, imprimantes, périphériques.</p>
-          </article>
-
-          <article class="tile">
-            <h3>Réseau et connectivité</h3>
-            <p>Wi-Fi, DNS, IP, tests , partage, VPN .</p>
-          </article>
-
-          <article class="tile">
-            <h3>Sécurité utilisateur</h3>
-            <p>Bonnes pratiques, mots de passe, MFA, sensibilisation phishing.</p>
-          </article>
-
-          <article class="tile">
-            <h3>Documentation</h3>
-            <p>Procédures simples, checklists, pas-à-pas pour utilisateurs.</p>
-          </article>
-
-          <article class="tile">
-            <h3>Suivi et ticketing</h3>
-            <p>Organisation, comptes-rendus, priorisation, escalade si nécessaire.</p>
-          </article>
-        </div>
-
-        
-      </div>
-    </section>
-
-    <!-- METHODE -->
-    <section class="section section--alt" id="methode" aria-labelledby="methode-title">
-      <div class="container">
-        <h2 id="methode-title">Comment je travaille</h2>
-        <p class="muted">Une façon de travailler simple, rassurante et traçable.</p>
-
-        <div class="grid">
-          <article class="tile">
-            <h3>1) Comprendre</h3>
-            <p>Je clarifie le contexte : message d’erreur, actions tentées, impact.</p>
-          </article>
-
-          <article class="tile">
-            <h3>2) Diagnostiquer</h3>
-            <p>Tests rapides, hypothèses, vérifications (réseau, comptes, poste, logiciel).</p>
-          </article>
-
-          <article class="tile">
-            <h3>3) Résoudre</h3>
-            <p>Correction propre, en expliquant ce qui est fait et pourquoi.</p>
-          </article>
-
-          <article class="tile">
-            <h3>4) Prévenir</h3>
-            <p>Mises à jour, bonnes pratiques.</p>
-          </article>
-
-          <article class="tile">
-            <h3>5) Documenter</h3>
-            <p>Compte-rendu ou mini procédure pour éviter la répétition.</p>
-          </article>
-
-          <article class="tile">
-            <h3>Priorisation</h3>
-            <p>Urgent / important / faible impact : je te dis clairement l’ordre.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- REALISATIONS -->
-    <section class="section" id="realisations" aria-labelledby="realisations-title">
-      <div class="container">
-        <h2 id="realisations-title">Réalisations</h2>
-        <p class="muted">Exemples courts .</p>
-
-        <div class="grid">
-          <article class="tile">
-            <h3>Audit rapide postes</h3>
-            <p>Inventaire, vérifications, recommandations sécurité & organisation.</p>
-          </article>
-
-          <article class="tile">
-            <h3>Dépannage connectivité</h3>
-            <p>Tests réseau, correction DNS/IP, stabilisation Wi-Fi, compte-rendu.</p>
-          </article>
-
-          <article class="tile">
-            <h3>Procédure “préparation poste”</h3>
-            <p>Checklist : installation, MAJ, outils, accès, tests finaux.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section section--alt" id="contact" aria-labelledby="contact-title">
-      <div class="container contact">
-
-       
-        <div>
-          <h2 id="contact-title">Contact</h2>
-          <p class="muted">Tu peux m’écrire ou utiliser le chat (réponse dès que possible).</p>
-
-          <ul class="contact__list">
-            <li><strong>Email :</strong> <a href="mailto:zam@mail.com">zam@mail.com</a></li>
-            <li><strong>Zone :</strong> Hauts-de-France / Remote</li>
-            <li><strong>Créneaux :</strong> soirs et week-end </li>
-          </ul>
-
-          <div class="contact__actions">
-            <button class="btn" id="btnChat4" type="button" aria-label="Ouvrir le chat">
-              Ouvrir le chat
-            </button>
-          </div>
-        </div>
-
-        
-        <form class="form" id="contactForm" aria-describedby="formHint">
-          <fieldset class="form__group">
-            <legend class="visuallyHidden">Formulaire de contact</legend>
-
-            <label for="name">Nom</label>
-            <input id="name" name="name" autocomplete="name" required />
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required />
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Décris le problème, le contexte, et l'urgence."></textarea>
-
-            <button class="btn" type="submit">Envoyer</button>
-          </fieldset>
-        </form>
-
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer__inner">
-      <p class="footer__brand">
-        © <span id="year">2026</span> — <strong>Zam</strong>, Assistante Support Informatique
-      </p>
-
-      <p class="footer__meta">
-        Support utilisateurs · Dépannage · Documentation · Sécurité
-      </p>
-
-      <nav class="footer__nav" aria-label="Navigation pied de page">
-        <a href="#services">Services</a>
-        <span aria-hidden="true">•</span>
-        <a href="#methode">Comment je travaille</a>
-        <span aria-hidden="true">•</span>
-        <a href="#realisations">Réalisations</a>
-        <span aria-hidden="true">•</span>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <p class="footer__legal muted">
-        Site vitrine pédagogique — Aucun support automatisé sans accord préalable.
-      </p>
     </div>
-  </footer>
+  </section>
+
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <h2 id="services-title">Services</h2>
+      <p class="muted">Des demandes fréquentes, traitées à distance, avec un suivi clair.</p>
+
+      <div class="grid">
+        <article class="tile">
+          <h3><span class="tile__icon" aria-hidden="true"></span>Diagnostic</h3>
+          <p>Cause → correction → vérification.</p>
+        </article>
+
+        <article class="tile">
+          <h3><span class="tile__icon" aria-hidden="true"></span>Windows</h3>
+          <p>MAJ, drivers, lenteurs, imprimantes, périphériques.</p>
+        </article>
+
+        <article class="tile">
+          <h3><span class="tile__icon" aria-hidden="true"></span>Réseau / Wi-Fi</h3>
+          <p>Connexion, DNS/IP, stabilité, VPN si besoin.</p>
+        </article>
+
+        <article class="tile">
+          <h3><span class="tile__icon" aria-hidden="true"></span>Sécurité de base</h3>
+          <p>Mots de passe, MFA, anti-phishing, réglages essentiels.</p>
+        </article>
+
+        <article class="tile">
+          <h3><span class="tile__icon" aria-hidden="true"></span>Documentation</h3>
+          <p>Procédures simples, pas-à-pas courts.</p>
+        </article>
+
+        <article class="tile">
+          <h3><span class="tile__icon" aria-hidden="true"></span>Suivi</h3>
+          <p>Priorité, compte-rendu, recommandations.</p>
+        </article>
+      </div>
+
+      <div class="section__media" aria-label="Illustration services">
+        <img
+          src="./assets/images/services.jpg"
+          alt="Assistance informatique à distance"
+          loading="lazy"
+          width="1200"
+          height="500"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pour-qui" aria-labelledby="pour-qui-title">
+    <div class="container">
+      <h2 id="pour-qui-title">Pour qui ?</h2>
+      <p class="muted">Pour les besoins du quotidien, sans jargon, 100% à distance.</p>
+
+      <div class="grid">
+        <article class="tile">
+          <h3>Particuliers</h3>
+          <p>PC lent, Windows, Wi-Fi, imprimante, installation.</p>
+        </article>
+
+        <article class="tile">
+          <h3>Petites entreprises</h3>
+          <p>Postes, comptes, outils, connexion, support utilisateur.</p>
+        </article>
+
+        <article class="tile">
+          <h3>Explications simples</h3>
+          <p>Guidage pas-à-pas et conseils.</p>
+        </article>
+      </div>
+
+      <div class="grid">
+        <article class="tile">
+          <h3>Je fais</h3>
+          <p>Diagnostic, résolution, conseils, mini doc.</p>
+        </article>
+
+        <article class="tile">
+          <h3>Je ne fais pas</h3>
+          <p><strong>Pas de déplacement</strong>, pas d’astreinte, pas de critique urgent.</p>
+        </article>
+
+        <article class="tile">
+          <h3>Actuellement</h3>
+          <p>Aide <strong>gratuite</strong> selon disponibilité (soirs & week-end).</p>
+        </article>
+      </div>
+
+      <div class="section__media" aria-label="Illustration pour qui">
+        <img
+          src="./assets/images/pour-qui.jpg"
+          alt="Support à distance pour particuliers et petites entreprises"
+          loading="lazy"
+          width="1200"
+          height="500"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="methode" aria-labelledby="methode-title">
+    <div class="container">
+      <h2 id="methode-title">Comment je travaille</h2>
+      <p class="muted">Simple, clair, orienté résultat.</p>
+
+      <div class="grid">
+        <article class="tile">
+          <h3>1) Comprendre</h3>
+          <p>Contexte, erreur, impact, priorité.</p>
+        </article>
+
+        <article class="tile">
+          <h3>2) Diagnostiquer</h3>
+          <p>Tests rapides : poste, compte, réseau, logiciel.</p>
+        </article>
+
+        <article class="tile">
+          <h3>3) Résoudre</h3>
+          <p>Correction + explication courte.</p>
+        </article>
+
+        <article class="tile">
+          <h3>4) Prévenir</h3>
+          <p>Réglages essentiels + bonnes pratiques.</p>
+        </article>
+
+        <article class="tile">
+          <h3>5) Documenter</h3>
+          <p>Mini procédure si nécessaire.</p>
+        </article>
+
+        <article class="tile">
+          <h3>Priorisation</h3>
+          <p>Bloquant / important / faible impact.</p>
+        </article>
+      </div>
+
+      <div class="section__media" aria-label="Illustration méthode">
+        <img
+          src="./assets/images/methode.jpg"
+          alt="Process de support : diagnostic et résolution"
+          loading="lazy"
+          width="1200"
+          height="500"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="realisations" aria-labelledby="realisations-title">
+    <div class="container">
+      <h2 id="realisations-title">Réalisations</h2>
+      <p class="muted">Exemples concrets d’interventions à distance.</p>
+
+      <div class="grid">
+        <article class="tile">
+          <h3>Audit rapide</h3>
+          <p>Vérifs + recommandations sécurité.</p>
+          <img
+            class="tile__img"
+            src="./assets/images/real-audit.jpg"
+            alt="Audit rapide d’un poste Windows"
+            loading="lazy"
+            width="640"
+            height="420"
+          />
+        </article>
+
+        <article class="tile">
+          <h3>Connexion stabilisée</h3>
+          <p>DNS/IP, Wi-Fi, vérif finale.</p>
+          <img
+            class="tile__img"
+            src="./assets/images/real-wifi.jpg"
+            alt="Diagnostic réseau et Wi-Fi"
+            loading="lazy"
+            width="640"
+            height="420"
+          />
+        </article>
+
+        <article class="tile">
+          <h3>Checklist poste</h3>
+          <p>Installation, MAJ, tests.</p>
+          <img
+            class="tile__img"
+            src="./assets/images/real-checklist.jpg"
+            alt="Checklist de préparation de poste"
+            loading="lazy"
+            width="640"
+            height="420"
+          />
+        </article>
+      </div>
+
+      <div class="section__media" aria-label="Illustration réalisations">
+        <img
+          src="./assets/images/realisations.jpg"
+          alt="Exemples de dépannage et assistance à distance"
+          loading="lazy"
+          width="1200"
+          height="500"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+    <div class="container contact">
+
+      <div>
+        <h2 id="contact-title">Contact</h2>
+        <p class="muted">
+          Écris-moi ou ouvre le chat. Assistance à distance <strong>gratuite</strong> pour l’instant.
+        </p>
+
+        <ul class="contact__list">
+          <li><strong>Email :</strong> <a href="mailto:zam@mail.com">zam@mail.com</a></li>
+          <li><strong>Zone :</strong> Hauts-de-France / à distance</li>
+          <li><strong>Créneaux :</strong> soirs & week-end</li>
+        </ul>
+
+        <p class="muted">
+          <strong>Note :</strong> pas d’intervention sur site. Si c’est critique/urgent, je te le dirai.
+        </p>
+
+        <div class="contact__actions">
+          <button class="btn" id="btnChat4" type="button" aria-label="Ouvrir le chat">
+            Ouvrir le chat
+          </button>
+        </div>
+      </div>
+
+      <form class="form" id="contactForm" aria-describedby="formHint">
+        <fieldset class="form__group">
+          <legend class="visuallyHidden">Formulaire de contact</legend>
+
+          <label for="name">Nom</label>
+          <input id="name" name="name" autocomplete="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            placeholder="Problème + ce que tu as déjà tenté + bloquant ou non."
+          ></textarea>
+
+          <button class="btn" type="submit">Envoyer</button>
+        </fieldset>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="container footer__inner">
+    <p class="footer__brand">
+      © <span id="year">2026</span> — <strong>Zam</strong>, Support Informatique à distance
+    </p>
+
+    <p class="footer__meta">
+      Assistance 100% à distance · Windows · Réseau/Wi-Fi · Comptes · Sécurité · Documentation
+    </p>
+
+    <nav class="footer__nav" aria-label="Navigation pied de page">
+      <a href="#services">Services</a>
+      <span aria-hidden="true">•</span>
+      <a href="#methode">Comment je travaille</a>
+      <span aria-hidden="true">•</span>
+      <a href="#realisations">Réalisations</a>
+      <span aria-hidden="true">•</span>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <p class="footer__legal muted">
+      Assistance à distance actuellement gratuite (missions ponctuelles, selon disponibilité) · Pas d’intervention sur site · Pas d’astreinte
+    </p>
+  </div>
+</footer>
 
   <script src="./assets/app.js"></script>
   <!--Start of Tawk.to Script-->
