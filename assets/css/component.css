@@ -36,7 +36,7 @@
 }
 
 .nav-toggle {
-  display: inline-flex;
+  display:none;
   width: 38px;
   height: 38px;
   position: relative;
@@ -120,4 +120,110 @@
 
 .theme-switch:checked + .toggle-label {
   background: transparent;
+}
+
+
+
+.hero-eyebrow {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--primary-2);
+  margin: 0 0 0.75rem;
+}
+
+.hero-title {
+  font-size: clamp(2.1rem, 4vw, 2.8rem);
+  margin: 0 0 0.75rem;
+}
+
+.hero-title .highlight {
+  color: var(--primary);
+}
+
+.hero-text {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary {
+  color: #061018;
+  background: linear-gradient(180deg, var(--primary-2), var(--primary));
+  border: 2px solid #c8ffc8;
+  box-shadow: 0 8px 0 #58cc71, 0 0 22px var(--shadow);
+  transform: translateY(0);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0 #5ecc58, 0 0 28px var(--shadow);
+  filter: saturate(1.08);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 0 #58cc67, inset 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.btn-outline:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0 rgba(0, 255, 68, 0.25), 0 0 24px var(--shadow);
+}
+.icon-view {
+  transition: transform 0.3s ease;
+}
+
+.btn-view:hover .icon-view {
+  transform: scale(1.1);
+}
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border-radius: 14px;
+  cursor: pointer;
+  color: var(--text);
+  border: 2px solid rgba(124, 255, 157, 0.5);
+  box-shadow: 0 6px 0 rgba(0, 255, 38, 0.2);
+  transform: translateY(0);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  background: rgba(124, 255, 133, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-outline:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0 rgba(0, 255, 98, 0.28), 0 0 22px var(--shadow);
+}
+
+.btn-outline:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 0 rgba(0, 255, 89, 0.18);
 }
