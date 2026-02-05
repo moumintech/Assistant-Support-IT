@@ -1,0 +1,92 @@
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 12px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-toggle {
+  display: none;
+  width: 38px;
+  height: 38px;
+  position: relative;
+}
+
+.nav-toggle span {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+}
+
+
+
+/* mobile + tablette */
+
+@media (max-width: 899px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding-bottom: 44px;
+  }
+  .brand {
+    position: relative;
+    z-index: 70;
+  }
+  .nav-list {
+    position: absolute;
+    top: 60px;
+    right: 4%;
+    flex-direction: column;
+    padding: 10px;
+    display: none;
+  }
+
+  .nav-list.is-open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+  }
+  .theme-toggle {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 56px;
+    z-index: 70;
+  }
+
+  .toggle-label {
+    width: 58px;
+    height: 30px;
+    padding: 4px;
+  }
+  .toggle-ball {
+    width: 22px;
+    height: 22px;
+  }
+}
+

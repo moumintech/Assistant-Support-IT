@@ -12,17 +12,35 @@
     
 </head>
 <body>
-    <header>
-        <img src="assets/images/logo.png">
-        <nav>
-            <ul>
+    <header class="site-header">
+    <div class="container header-inner">
+      <a href="#acceuil" class="brand">
+        <img src="assets/images/logo.png" alt="logo" class="brand-logo">
+        </a>
+        <nav class="main-nav">
+            <ul class="nav-list">
                 <li><a href="#acceuil">Acceuil</a></li>
                 <li><a href="#services">Services</li>
-                <li><a href="#compétences">Compétence</a></li>
+                <li><a href="#competences">Compétence</li>
                 <li><a href="#apropos">A prospos</li>
                 <li><a href="#contact">Contact</li>
             </ul>
+             <button class="nav-toggle" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </nav>
+        <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch" />
+        <label for="theme-switch" class="toggle-label">
+          <span class="icon-sun"><img src="assets/images/mode-jour.png" alt="mode jour" width="20" /></span>
+          <span class="toggle-ball"></span>
+          <span class="icon-moon"><img src="assets/images/mode-nuit.png" alt="mode nuit" width="20" /></span>
+        </label>
+      </div>
+      </div>
+       
     </header>
     <main>
         <section id="acceuil">
@@ -36,6 +54,6 @@
     <footer>
         <p>© Copyright   2025-2026 |  All rigths reserved  |  Tous droits réservés</p>
     </footer>
-    
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>
