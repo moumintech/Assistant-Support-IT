@@ -138,7 +138,7 @@
   .nav-list.is-open { display: flex; }
 
   .theme-toggle {
-    display: none;
+    display: inline-block;
     position: absolute;
     left: 10px;
     top: 56px;
