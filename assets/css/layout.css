@@ -1,4 +1,6 @@
-
+.section {
+  padding-block: 4.5rem;
+}
 .site-header {
   position: sticky;
   top: 0;
@@ -11,6 +13,7 @@
   justify-content: space-between;
   padding-block: 12px;
 }
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -40,11 +43,40 @@
   height: 2px;
 }
 
+.skills {
+  padding-block: 4.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.6rem;
+}
+
+.contact {
+  padding-block: 5rem;
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
 
 
 /* mobile + tablette */
 
 @media (max-width: 899px) {
+  .section {
+    padding-block: 3.5rem;
+  }
   .site-header {
     position: sticky;
     top: 0;
@@ -115,5 +147,32 @@
     width: 22px;
     height: 22px;
   }
+    .services-layout{
+    grid-template-columns: 1fr;
+  }
+  .services-intro{
+    position: static;
+  }
+   .contact-inner {
+    grid-template-columns: 1fr;
+  }
+  
+
+  .hero{
+    padding-block: 6rem 3.5rem;
+  }
+  .hero-text{
+    max-width: 58ch;
+  }
+
 }
 
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker__track {
+    animation: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+}
