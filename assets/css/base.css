@@ -16,7 +16,7 @@ img {
 }
 /*mode jours*/
 :root[data-theme="light"] {
-  --bg: #f6f8f7;
+  --bg: #e2f4eb;
   --bg-top: #ffffff;
 
   --card: #ffffff;
