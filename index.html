@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Développeuse  informatique </title>
+    <title>Technicienne informatique </title>
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/component.css">
@@ -42,43 +42,268 @@
       </div>
     </header>
     <main>
-        <section id="home">
-         <div class="container hero-inner">
-          <div class="hero-content">
-            <p class="hero-eyebrow">Zam</p>
-            <h1 class="hero-title">
-              Développeuse
-              <span class="highlight">informatique</span>    
-            </h1>
-            <p class="hero-text">
-   Je conçois des applications web, mobiles et desktop, et j’accompagne les utilisateurs dans la résolution de leurs problèmes informatiques.
-            </p>
-            <div class="hero-actions">
-  <a class="btn btn-primary" href="" target="_blank" rel="noopener">
-    <span>Prendre rendez-vous</span>
-    <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M7 11h10M7 15h7M8 3v2m8-2v2M6 7h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-  </a>
+     <section id="home" class="hero" aria-label="Accueil">
+      <div class="hero-media" aria-hidden="true">
+      <img src="assets/images/fond.jpg" alt="" class="hero-bg">
+      </div>
 
-  <a class="btn btn-outline" href="#contact">
-    <span>Me contacter</span>
-    <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
-      <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
-    </svg>
-  </a>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Zam</p>
+
+      <h1 class="hero-title">
+        Technicienne <span class="highlight">informatique</span>
+      </h1>
+
+      <p class="hero-text">
+        Je conçois des applications web, mobiles et desktop, et j’accompagne les utilisateurs dans la résolution de leurs problèmes informatiques.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="" target="_blank" rel="noopener">
+          <span>Prendre rendez-vous</span>
+          <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 11h10M7 15h7M8 3v2m8-2v2M6 7h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </a>
+
+        <a class="btn btn-outline" href="#contact">
+          <span>Me contacter</span>
+          <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+            <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+       <section id="services" class="section services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Ce que je propose</p>
+      <h2 class="section-title" id="services-title">Services</h2>
+    </div>
+
+    <div class="services-layout">
+      <div class="services-intro">
+        <p class="services-lead">
+          Support informatique orienté utilisateurs : diagnostic, résolution d’incidents et accompagnement au quotidien.
+        </p>
+
+        <div class="services-badges" aria-label="Domaines">
+          <span class="service-badge">Support</span>
+          <span class="service-badge">Tickets</span>
+          <span class="service-badge">Documentation</span>
+          <span class="service-badge">Développement</span>
+        </div>
+      </div>
+
+      <div class="services-list" role="list">
+        <article class="service-item" role="listitem">
+          <h3>Assistance utilisateurs</h3>
+          <p>Prise en charge des demandes, diagnostic et résolution des incidents avec une communication claire.</p>
+        </article>
+
+        <article class="service-item" role="listitem">
+          <h3>Gestion des incidents & tickets</h3>
+          <p>Suivi des demandes, priorisation, traçabilité et amélioration continue via outil de ticketing.</p>
+        </article>
+
+        <article class="service-item" role="listitem">
+          <h3>Postes et: environnement</h3>
+          <p>Configuration et dépannage des postes, accès et comptes, bonnes pratiques de sécurité.</p>
+        </article>
+
+        <article class="service-item" role="listitem">
+          <h3>Documentation</h3>
+          <p>Rédaction de procédures et guides pour aider les utilisateurs et standardiser les solutions.</p>
+        </article>
+
+        <article class="service-item" role="listitem">
+          <h3>Développement d’outils</h3>
+          <p>Petites applications ou automatisations pour simplifier des tâches et améliorer le support.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+       <section id="skills" class="section skills " aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Ce que je maîtrise</p>
+            <h2 class="section-title">Compétences</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skills-card">
+              <h3>Support informatique et assistance utilisateurs</h3>
+              <ul>
+          <li>Support utilisateurs (diagnostic et résolution d’incidents)</li>
+          <li>Prise en charge des demandes et suivi des tickets</li>
+          <li>GLPI (gestion des incidents et demandes)</li>
+          <li>Active Directory (comptes, droits, accès)</li>
+          <li>Postes de travail, environnement Windows</li>
+              </ul>
+            </article>
+
+            <article class="skills-card">
+              <h3>Outils et environnement de travail</h3>
+              <ul>
+                <li>Word</li>
+                <li>Exel</li>
+                <li>Canva</li>
+                <li>Notion</li>
+                <li>Outils collaboratifs et bureautiques</li>
+                
+              </ul>
+            </article>
+
+         <article class="skills-card">
+        <h3>Développement – Applications</h3>
+        <ul>
+          <li>Applications web, mobiles et desktop</li>
+          <li>HTML5 / CSS3</li>
+          <li>JavaScript / PHP</li>
+          <li>Java, Python, C</li>
+        </ul>
+      </article>
+
+      <article class="skills-card">
+        <h3>Frameworks & environnements de développement</h3>
+        <ul>
+          <li>Laravel</li>
+          <li>Angular</li>
+          <li>React</li>
+          <li>Spring Boot</li>
+          <li>Django</li>
+        </ul>
+      </article>
+          </div>
+        </div>
+      </section>
+        <section id="contact" class="section contact">
+  <div class="container contact-inner">
+    <div class="contact-left">
+      <div class="section-header">
+        <p class="section-eyebrow">Travaillons ensemble ?</p>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">
+          Une idée de projet ou envie d’échanger ? Écrivez-moi, je vous répondrai avec plaisir.
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="contact-grid">
+
+     
+      <div class="contact-info">
+        <h3>Informations</h3>
+
+        <p>
+          <strong>Email :</strong>
+          <a href="mailto:moumini.tech@gmail.com">
+            moumini.tech@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <strong>Statut :</strong> Disponible pour un stage en informatique
+        </p>
+
+        <p>
+          <strong>Localisation :</strong> France (remote ou sur place )
+        </p>
+
+      <div class="contact-form-wrapper">
+        <h3>Ecrivez moi</h3>
+
+      <form
+  id="contact-form"
+  action="https://formspree.io/f/xjgonqyp"
+  method="POST"
+>
+  <div class="form-field">
+    <label for="name">Nom et Prénom</label>
+    <input type="text" id="name" name="name" required />
+  </div>
+
+  <div class="form-field">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required />
+    
+    <small id="email-error" style="display:none;">Email invalide.</small>
+  </div>
+
+  <div class="form-field">
+  <label for="phone">Téléphone</label>
+  <input
+    type="tel"
+    id="phone"
+    name="phone"
+    inputmode="tel"
+    autocomplete="tel"
+    placeholder="Ex : 06 10 34 33 78"
+    pattern="^(?:(?:\+|00)\d{1,3}[\s.-]?)?(?:\(?\d{1,4}\)?[\s.-]?){2,}\d$"
+    minlength="10"
+    maxlength="20"
+  />
+  <small id="phone-help">Chiffres</small>
+  <small id="phone-error" style="display:none;">Numéro invalide.</small>
 </div>
-            
-        </section>
-        <section id="services"></section>
-        <section id="skills"></section>
-        <section id="about"></section>
-        <section id="contact"></section>
+
+
+  <div class="form-field">
+    <label for="subject">Sujet</label>
+    <input type="text" id="subject" name="subject" required />
+  </div>
+
+  <div class="form-field">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
+
+  <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
+
+  <p id="contact-success" style="display:none;"> Message envoyé. Merci !</p>
+  <p id="contact-error" style="display:none;">Une erreur est survenue. Réessaie.</p>
+
+  <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
     </main>
-    <footer>
-        <p>© Copyright   2025-2026 |  All rigths reserved  |  Tous droits réservés</p>
-    </footer>
+
+ 
+   <footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-copy">
+      © Copyright   2025-2026  |  All rigths reserved  |  Tous droits réservés
+    </p>
+    <p class="footer-note">
+     <div class="ticker" role="region" aria-label="Informations de contact">
+  <p class="ticker__track">
+    <span class="ticker__item">Réalisé par Zamzam MOUMINI</span>
+    <span class="ticker__sep">•</span>
+    <a class="ticker__link" href="https://mounintech.fr" target="_blank" rel="noopener">mounintech.fr</a>
+    <span class="ticker__sep">•</span>
+    <span class="ticker__item">Technicienne informatique</span>
+    <span class="ticker__sep">•</span>
+    <a class="ticker__link" href="mailto:moumini.tech@gmail.com">moumini.tech@gmail.com</a>
+
+</div>
+
+    </p>
+  </div>
+</footer>
+    </main>
+    
     <script src="assets/js/main.js"></script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
