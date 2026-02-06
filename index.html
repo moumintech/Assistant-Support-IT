@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technicienne informatique </title>
+<meta name="description" content="Technicienne informatique : support utilisateurs, gestion des incidents, documentation et développement d’outils. Basée en France, disponible (remote ou sur place)." />
+  <link rel="icon" href="assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/component.css">
@@ -14,14 +18,14 @@
 <body>
     <header class="site-header">
     <div class="container header-inner">
-      <a href="#acceuil" class="brand">
+      <a href="#home" class="brand">
         <img src="assets/images/logo.png" alt="logo" class="brand-logo">
         </a>
         <nav class="main-nav">
             <ul class="nav-list">
-                <li><a href="#home">Acceuil</a></li>
+                <li><a href="#home">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#competences">Compétence</a></li>
+                <li><a href="#skills">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
              <button class="nav-toggle" aria-label="Ouvrir le menu">
@@ -110,7 +114,7 @@
         </article>
 
         <article class="service-item" role="listitem">
-          <h3>Postes et: environnement</h3>
+          <h3>Postes et environnement</h3>
           <p>Configuration et dépannage des postes, accès et comptes, bonnes pratiques de sécurité.</p>
         </article>
 
@@ -150,7 +154,7 @@
               <h3>Outils et environnement de travail</h3>
               <ul>
                 <li>Word</li>
-                <li>Exel</li>
+                <li>Excel</li>
                 <li>Canva</li>
                 <li>Notion</li>
                 <li>Outils collaboratifs et bureautiques</li>
@@ -218,62 +222,55 @@
       <div class="contact-form-wrapper">
         <h3>Ecrivez moi</h3>
 
-      <form
-  id="contact-form"
-  action="https://formspree.io/f/xjgonqyp"
-  method="POST"
->
-  <div class="form-field">
-    <label for="name">Nom et Prénom</label>
-    <input type="text" id="name" name="name" required />
-  </div>
+  
 
-  <div class="form-field">
-    <label for="email">E-mail</label>
-    <input type="email" id="email" name="email" required />
-    
-    <small id="email-error" style="display:hidden;">Email invalide.</small>
-  </div>
+            <form id="contact-form" action="https://formspree.io/f/xjgonqyp" method="POST" novalidate>
+              <div class="form-field">
+                <label for="name">Nom et Prénom</label>
+                <input type="text" id="name" name="name" autocomplete="name" required />
+              </div>
 
-  <div class="form-field">
-  <label for="phone">Téléphone</label>
-  <input
-    type="tel"
-    id="phone"
-    name="phone"
-    inputmode="tel"
-    autocomplete="tel"
-    placeholder="Ex : 06 10 34 33 78"
-    pattern="^(?:(?:\+|00)\d{1,3}[\s.-]?)?(?:\(?\d{1,4}\)?[\s.-]?){2,}\d$"
-    minlength="10"
-    maxlength="20"
-  />
-</div>
+              <div class="form-field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+                <small id="email-error" hidden>Email invalide.</small>
+              </div>
 
+              <div class="form-field">
+                <label for="phone">Téléphone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  placeholder="Ex : 06 10 34 33 78"
+                  pattern="^[0-9+\s().-]{8,20}$"
+                />
+                <small id="phone-error" hidden>Numéro invalide.</small>
+              </div>
 
-  <div class="form-field">
-    <label for="subject">Sujet</label>
-    <input type="text" id="subject" name="subject" required />
-  </div>
+              <div class="form-field">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
 
-  <div class="form-field">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-  </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
 
-  <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
+              <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
 
-  <p id="contact-success" style="display:hidden;"> Message envoyé. Merci !</p>
-  <p id="contact-error" style="display:hidden;">Une erreur est survenue. Réessaie.</p>
+              <p id="contact-success" hidden>Message envoyé. Merci !</p>
+              <p id="contact-error" hidden>Une erreur est survenue. Réessaie.</p>
 
-  <button type="submit" class="btn btn-primary">Envoyer</button>
-</form>
-
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+          </div>
+        </div>
       </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
     </main>
 
@@ -281,7 +278,7 @@
    <footer class="site-footer">
   <div class="container footer-inner">
     <p class="footer-copy">
-      © Copyright   2025-2026  |  All rigths reserved  |  Tous droits réservés
+      © Copyright   2025-2026  |  All rights reserved |  Tous droits réservés
     </p>
     <p class="footer-note">
      <div class="ticker" role="region" aria-label="Informations de contact">
