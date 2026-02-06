@@ -627,6 +627,15 @@
   color: var(--primary-2);
 }
 
+iframe[src*="tawk.to"] {
+  pointer-events: auto;
+}
+
+iframe[src*="tawk.to"] + div,
+iframe[src*="tawk.to"] [aria-label*="We are here"] {
+  display: none !important;
+}
+
 @keyframes ticker-move {
   0% {
     transform: translateX(0);

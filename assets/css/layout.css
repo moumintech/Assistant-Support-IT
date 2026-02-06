@@ -71,6 +71,13 @@
 }
 
 
+.site-footer {
+  padding-block: 1.8rem;
+}
+
+.footer-inner {
+  text-align: center;
+}
 /* mobile + tablette */
 
 @media (max-width: 899px) {
@@ -166,6 +173,7 @@
   }
 
 }
+
 
 
 @media (prefers-reduced-motion: reduce) {
